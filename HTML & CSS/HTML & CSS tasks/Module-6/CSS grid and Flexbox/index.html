@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid and Flexbox</title>
+</head>
+
+<style>
+    .containar-fluid {
+        align-items:center;
+    }
+
+    .row {
+        display:flex;
+        justify-content: space-around;
+        align-items:flex-end;
+        align-content:flex-start;
+    }
+
+    .col {
+        align-self:auto;
+        margin: 20px;
+        padding: 20px;
+        height: 220px;
+        align-content:space-around;
+
+    }
+
+    img 
+    {
+        display:contents;
+        margin-left:auto;
+        margin-right: auto;
+    }
+
+    p {
+        text-align:left;
+        padding:3px;
+    }
+
+    @media screen and (max-width: 1400px) {
+        .row {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .col {
+            align-self: center;
+            margin:20px;
+            padding:20px;
+            height:350px;
+            align-content: center;
+        }
+
+        img {
+            display:grid;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    }
+
+    @media screen and (max-width:700px) {
+        .row {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .col {
+            align-self:center;
+            margin:20px;
+            padding: 20px;
+            height:290px;
+            align-content: center;
+        }
+
+        img {
+            display: block;
+            margin-left:20px;
+            margin-right: 20px;
+        }
+
+    }
+</style>
+
+<body>
+    <div class="containar-fluid">
+        <div class="row">
+            <div class="col">
+                <img src="card1.png" alt="image not found" width="200px">
+                <p>Price : 350</p>
+                <p>Embrace the mystery of the night with ‘Night Fever,’ a captivating fragrance that leaves a lasting impression. It opens with a vibrant blend of orange, bergamot, and mandarin for a fresh, invigorating start.</p>
+            </div>
+
+            <div class="col">
+                <img src="card2.png" alt="image not found" width="200px">
+                <p>Price : 499</p>
+                <p>The Devil Eau De Parfum is made for the bold, daring souls who love to set the world on fire with their presence.It opens with a fierce and fiery hit of Spicy Saffron that instantly ignites your senses.
+                </p>
+            </div>
+
+            <div class="col">
+                <img src="card3.png" alt="image not found" width="200px">
+                <p>Price:450</p>
+                <p>A dresser-essential for a modern woman who likes to take a road less travelled. Step into an unconventional world with an Eau De Parfum that is glamorous, classy and magnetic.</p>
+            </div>
+
+            <div class="col">
+                <img src="card4.png"image not found" width="200px">
+                <p>Price:555</p>
+                <p>An iconic blend of Bergamot and Coriander at the top with Ambergris at its base and Pink Pepper at its heart, this unisex scent is for all those looking for a subtle yet charming cologne.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img src="card5.png" alt="image not found" width="200px">
+                <p>Price : 350</p>
+                <p>B.L.U. Man is for those who love the water, the waves and the me time. Wear it to start your journey of solo exploration as you enjoy the fresh, calm outdoors. Feel calm and confident as the world admires your easy-going attitude.</p>
+            </div>
+
+            <div class="col">
+                <img src="card6.png" alt="image not found" width="200px">
+                <p>Price :499</p>
+                <p>Turn heads and make your crush blush with this enchanting, fruity, musky BLUSH Eau De Parfum for Women. The vibrant fruity top notes create an irresistible allure, instantly captivating anyone who catches your scent.</p>
+            </div>
+
+            <div class="col">
+                <img src="card7.png" alt="image not found" width="200px">
+                <p>Price:399</p>
+                <p>The Taaj Gold Oud Attar exudes the essence of grandeur, sophistication, and royalty, made for those who define luxury, wherever they go. It opens with the top notes of the delightful caramel. The heart notes consist of rose, jasmine, and orris to give a floral depth to the fragrance. </p>
+            </div>
+
+            <div class="col">
+                <img src="card8.png" alt="image not found" width="200px">
+                <p>Price : 350</p>
+                <p>Bella Vita Organic Luxury Senorita Perfume is a captivating fragrance formulated for women. Infused with top notes of Yuzu, Pomegranate, and Mint, it transitions into a floral heart of Peony, Lotus, and Magnolia.</p>
+            </div>
+        </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

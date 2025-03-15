@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:aqua;
+    color:black;
+    font-size: 1rem;
+}
+
+header ul {
+    display: flex;
+    justify-content:space-around;
+    list-style-type:none;
+    padding: 2px;
+}
+
+section {
+    background-color:lightcoral;
+    color:black;
+    border: 4px solid black;
+    padding: 2px;
+}
+
+main {
+    padding: 8px;
+}
+
+footer {
+    background-color:aqua;
+    color:black;
+    text-align: center;
+    padding: 30px;
+}
+
+a {
+    text-decoration:dotted;
+    color:black;
+}
