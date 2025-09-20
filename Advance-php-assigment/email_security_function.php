@@ -1,0 +1,1 @@
+<!-- Write a function that sanitizes email input and validates it before sending -->
